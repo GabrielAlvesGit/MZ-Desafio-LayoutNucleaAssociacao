@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", serif;
+  background-color: $primary--color--white;
+}
+
+a {
+  text-decoration: none;
+  color: #696969;
+  transition: 0.45s all;
+  opacity: 5;
+  &:hover{
+    transition: 0.35s all;
+    opacity: .2;
+  }
+}
+
+li{
+  list-style: none;
+  font-style: normal;
+}

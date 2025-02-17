@@ -1,0 +1,78 @@
+.pgHome__connections{
+  display: flex;
+  width: 100%;
+
+  &__left{
+    width: 50%;
+    background: linear-gradient(357deg, #FFF 10.92%, #C491FF 133.16%);
+    >.container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-right: 90px;
+      margin-right: 0;
+      width: 100%;
+      max-width: 608px;
+      height: 772px;
+      gap: 37px;
+    }
+
+    &__title{
+      color: $primary--color--dark;
+      font-size: 53px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 110%;
+      letter-spacing: -0.53px;
+      text-transform: uppercase;
+    }
+
+    &__contents{
+      display: flex;
+      flex-direction: column;
+      gap: 37px;
+
+      &__title{
+        color: $primary--color--dark;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 125%;
+        letter-spacing: -0.2px;
+      }
+
+      &__text {
+        color: $primary--color--dark;
+        font-size: 18px;
+        font-weight: 350;
+        line-height: 125%;
+        letter-spacing: -0.18px;
+      }
+
+      &__link {
+        display: flex;
+        color: $primary--color--dark;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 125%;
+        letter-spacing: -0.18px;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+  }
+
+  &__right{
+    width: 50%;
+
+    &__imgs{
+      width: 100%;
+      height: 772px;
+
+      &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
