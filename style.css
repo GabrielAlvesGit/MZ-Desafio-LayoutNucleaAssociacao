@@ -569,8 +569,63 @@ li {
   width: 50%;
   background: linear-gradient(180deg, #FFF 0%, #C491FF 100%);
 }
+.pgHome__innovation__left > .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 90px;
+  margin-right: 0;
+  width: 100%;
+  max-width: 608px;
+  height: 772px;
+  gap: 37px;
+}
+.pgHome__innovation__left__contents__title {
+  color: #000;
+  font-size: 53px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: -0.53px;
+  text-transform: uppercase;
+  margin-bottom: 47px;
+}
+.pgHome__innovation__left__contents__text {
+  width: 70%;
+  font-size: 18px;
+  font-weight: 350;
+  line-height: 125%;
+  letter-spacing: -0.18px;
+}
+.pgHome__innovation__left__contents__link {
+  background-color: #000;
+  display: inline-block;
+  padding: 16px 20px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  color: #F5F5F5;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  margin-top: 56px;
+}
 .pgHome__innovation__right {
+  display: flex;
+  align-items: flex-end;
   width: 50%;
+}
+.pgHome__innovation__right__imgs {
+  width: 100%;
+  height: 620px;
+}
+.pgHome__innovation__right__imgs__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 70px 53px;
 }
 
 /*# sourceMappingURL=style.css.map */
