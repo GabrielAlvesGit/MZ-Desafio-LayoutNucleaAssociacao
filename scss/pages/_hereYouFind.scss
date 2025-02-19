@@ -67,8 +67,7 @@
         justify-content: center;
         padding-left: 124px;
         margin-left: 0;
-        width: 100%;
-        max-width: 608px;
+        width: 608px;
         height: 100%;
       }
 
@@ -126,6 +125,66 @@
             font-weight: 350;
             line-height: 125%; /* 20px */
             letter-spacing: -0.16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices - 1200px */
+@media screen and (max-width: 1200px){
+  .pgHome__hereYouFind{
+    display: flex;
+    flex-direction: column;
+
+    &__left{
+      width: 100%;
+
+      &__contents{
+        &__title{
+          font-size: 32px;
+          padding-left: 0;
+          left: 8%;
+        }
+      }
+    }
+
+    &__right{
+      width: 100%;
+
+      &__boxs{
+
+        .container{
+          flex-direction: column;
+          justify-content: center;
+          padding-left: 15px;
+          padding-top: 43px;
+          padding-bottom: 32px;
+          margin-left: auto;
+          width: 100%;
+        }
+
+        &__box{
+          padding: 18px 0 18px;
+          gap: 21.71px;
+
+          &__icon{
+            width: 43.421px;
+            height: 43.968px;
+          }
+
+          &__contents{
+
+            &__title{
+              font-size: 16px;
+            }
+
+            &__text{
+              font-size: 14px;
+            }
           }
         }
       }

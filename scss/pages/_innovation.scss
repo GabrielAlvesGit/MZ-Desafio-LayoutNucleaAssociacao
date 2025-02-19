@@ -11,8 +11,7 @@
       justify-content: center;
       padding-right: 90px;
       margin-right: 0;
-      width: 100%;
-      max-width: 608px;
+      width: 608px;
       height: 772px;
       gap: 37px;
     }
@@ -60,6 +59,7 @@
     display: flex;
     align-items: flex-end;
     width: 50%;
+    background-color: $primary--color--white;
    
     &__imgs{
       width: 100%;
@@ -70,6 +70,55 @@
         height: 100%;
         object-fit: cover;
         object-position: 70px 53px;
+      }
+    }
+  }
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices - 1200px */
+@media screen and (max-width: 1200px) {
+  .pgHome__innovation{
+    flex-direction: column-reverse;
+
+    &__left{
+        width: 100%;
+
+      >.container{
+        width: 100%;
+        height: 100%;
+        padding-right: 15px;
+        padding-top: 46.5px;
+        padding-bottom: 81px;
+        margin-right: auto;
+      }      
+
+      &__contents{
+        
+        &__title{
+          font-size: 40px;
+        }
+
+        &__text{
+          font-size: 16px;
+        }
+
+        &__link{
+          padding: 8.221px 10.277px;
+        }
+      }
+    }
+
+    &__right{
+      width: 100%;
+      padding-top: 48px;
+
+      &__imgs{
+        height: 360px;
+        
+        &__img{
+          object-position: center top;
+        }
       }
     }
   }

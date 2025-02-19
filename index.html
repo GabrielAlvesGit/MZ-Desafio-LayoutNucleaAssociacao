@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
   <title>Núclea Associação</title>
 </head>
 <body>
@@ -18,7 +19,7 @@
 
         <!-- Nav -->
       <nav class="header__nav">
-        <ul class="header__nav__list js-menu">
+        <ul class="header__nav__list js-nav-active">
           <li class="header__nav__list__item js-nav">
             <a class="header__nav__list__item__link" href="#">iniciativas educacionais</a>
             <ul class="header__nav__list__item__sublist">
@@ -56,6 +57,12 @@
             </ul>
           </li>
         </ul>
+
+        <!-- Menu Hamburguer -->
+        <div class="header__nav__menu">
+          <img class="js-menu" src="/img/menu.png" alt="menu" />
+          <img src="/img/close.png" alt="menu" />
+        </div>
       </nav>
     </div>
   </header>
@@ -179,7 +186,7 @@
           </article>
   
           <div class="pg__platform__top__right">
-            <div class="pg__platform__top__right__imgs">
+            <div class="pg__platform__top__right__img">
               <img src="/img/plaformar.png" alt="" />
             </div>
           </div>
@@ -193,7 +200,7 @@
               </div>
 
               <div class="pg__platform__bottom__left__contents">
-                <h2 class="pg__platform__bottom__left__contents__title">nosso impacto na educação</h2>
+                <h2 class="pg__platform__bottom__left__contents__title">nosso impacto<br> na educação</h2>
               </div>
             </div>
           </div>
@@ -256,13 +263,190 @@
           </div>
         </div>
       </section>
+
+      <!-- News -->
+      <section class="pgHome__news">
+        <div class="container">
+          <article class="pgHome__news__top">
+              <div class="pgHome__news__top__contents">
+                <h1 class="pgHome__news__top__contents__title">fique por dentro</h1>
+
+                <div class="pgHome__news__top__contents__content">
+                  <p class="pgHome__news__top__contents__content__text">Atualizações, conteúdos e novidades para você saber mais sobre nosso impacto.</p>
+    
+                  <a class="pgHome__news__top__contents__content__link" href="#">conheça nosso blog</a>
+                </div>
+              </div>
+          </article>
+
+          <article class="pgHome__news__bottom">
+              <div class="pgHome__news__bottom__boxs">
+                <div class="pgHome__news__bottom__boxs__box js-new">
+                  <div class="pgHome__news__bottom__boxs__box__imgs">
+                    <img class="pgHome__news__bottom__boxs__box__imgs__img" src="/img/news/img_1.png" alt="" />
+                  </div>
+              
+                  <div class="pgHome__news__bottom__boxs__box__contents">
+                    <span class="pgHome__news__bottom__boxs__box__contents__type">EDITORIA</span>
+                    <h3 class="pgHome__news__bottom__boxs__box__contents__title">Título da notícia<br> em até duas linhas.</h3>
+                    <p class="pgHome__news__bottom__boxs__box__contents__text">Chamada da notícia em até três linhas, lorem ipsum dolor sit amet, consectetur adipiscing elit, cras tellus nisi, convallis.</p>
+
+                    <a class="pgHome__news__bottom__boxs__box__contents__link" href="#">saiba mais</a>
+                  </div>
+                </div>
+
+                <div class="pgHome__news__bottom__boxs__box js-new">
+                  <div class="pgHome__news__bottom__boxs__box__imgs">
+                    <img class="pgHome__news__bottom__boxs__box__imgs__img" src="/img/news/img_2.png" alt="" />
+                  </div>
+              
+                  <div class="pgHome__news__bottom__boxs__box__contents">
+                    <span class="pgHome__news__bottom__boxs__box__contents__type">EDITORIA</span>
+                    <h3 class="pgHome__news__bottom__boxs__box__contents__title">Título da notícia<br> em até duas linhas.</h3>
+                    <p class="pgHome__news__bottom__boxs__box__contents__text">Chamada da notícia em até três linhas, lorem ipsum dolor sit amet, consectetur adipiscing elit, cras tellus nisi, convallis.</p>
+
+                    <a class="pgHome__news__bottom__boxs__box__contents__link" href="#">saiba mais</a>
+                  </div>
+                </div>
+
+                <div class="pgHome__news__bottom__boxs__box js-new">
+                  <div class="pgHome__news__bottom__boxs__box__imgs">
+                    <img class="pgHome__news__bottom__boxs__box__imgs__img" src="/img/news/img_3.png" alt="" />
+                  </div>
+              
+                  <div class="pgHome__news__bottom__boxs__box__contents">
+                    <span class="pgHome__news__bottom__boxs__box__contents__type">EDITORIA</span>
+                    <h3 class="pgHome__news__bottom__boxs__box__contents__title">Título da notícia<br> em até duas linhas.</h3>
+                    <p class="pgHome__news__bottom__boxs__box__contents__text">Chamada da notícia em até três linhas, lorem ipsum dolor sit amet, consectetur adipiscing elit, cras tellus nisi, convallis.</p>
+
+                    <a class="pgHome__news__bottom__boxs__box__contents__link" href="#">saiba mais</a>
+                  </div>
+                </div>
+
+                <div class="pgHome__news__bottom__boxs__box js-new">
+                  <div class="pgHome__news__bottom__boxs__box__imgs">
+                    <img class="pgHome__news__bottom__boxs__box__imgs__img" src="/img/news/img_1.png" alt="" />
+                  </div>
+              
+                  <div class="pgHome__news__bottom__boxs__box__contents">
+                    <span class="pgHome__news__bottom__boxs__box__contents__type">EDITORIA</span>
+                    <h3 class="pgHome__news__bottom__boxs__box__contents__title">Título da notícia<br> em até duas linhas.</h3>
+                    <p class="pgHome__news__bottom__boxs__box__contents__text">Chamada da notícia em até três linhas, lorem ipsum dolor sit amet, consectetur adipiscing elit, cras tellus nisi, convallis.</p>
+
+                    <a class="pgHome__news__bottom__boxs__box__contents__link" href="#">saiba mais</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pgHome__news__bottom__dots">
+                <span class="pgHome__news__bottom__dots__dot js-next-slick"></span>
+                <span class="pgHome__news__bottom__dots__dot js-next-slick"></span>
+                <span class="pgHome__news__bottom__dots__dot js-next-slick"></span>
+              </div>
+          </article>
+        </div>
+      </section>
   </main>
 
   <!-- Footer -->
   <footer class="footer">
+    <div class="container">
+      <div class="footer__left">
 
+        <!-- Logo Footer -->
+        <div class="footer__left__logos">
+          <img class="footer__left__logos__logo" src="/img/logos/associacao.png" alt="associacao" />
+        </div>
+
+        <!-- Navigation Footer -->
+        <div class="footer__left__navigation">
+          <ul class="footer__left__navigation__list">
+            <li class="footer__left__navigation__list__item">
+              <a  class="footer__left__navigation__list__item__link">institucional</a>
+              <ul class="sub__menu">
+                <li class="sub__menu__item">
+                  <a class="sub__menu__item__link" href="#">Home</a>
+                </li>
+
+                <li class="sub__menu__item">
+                  <a class="sub__menu__item__link" href="#">Sobre nós</a>
+                </li>
+
+                <li class="sub__menu__item">
+                  <a class="sub__menu__item__link" href="#">Blog</a>
+                </li>
+              </ul> 
+            </li>
+
+            <li class="footer__left__navigation__list__item">
+              <a  class="footer__left__navigation__list__item__link">EDUCACIONAL</a>
+              <ul class="sub__menu">
+                <li class="sub__menu__item">
+                  <a class="sub__menu__item__link" href="#">Núclea Academy</a>
+                </li>
+
+                <li class="sub__menu__item">
+                  <a class="sub__menu__item__link" href="#">Ser+Tech</a>
+                </li>
+              </ul> 
+            </li>
+
+            <li class="footer__left__navigation__list__item">
+              <a  class="footer__left__navigation__list__item__link">Soluções financeiras</a>
+              <ul class="sub__menu">
+                <li class="sub__menu__item">
+                  <a class="sub__menu__item__link" href="#">SCC</a>
+                </li>
+              </ul> 
+            </li>
+          </ul>
+        </div>
+
+        <!-- Redes Sociais -->
+        <div class="footer__left__socialMedia">
+          <ul class="footer__left__socialMedia__list">
+            <li class="footer__left__socialMedia__list__item">
+              <a class="footer__left__socialMedia__list__item__link" href="#">
+                <img class="footer__left__socialMedia__list__item__link__icon" src="/img/socialMedia/instagram.png" alt="instagram" />
+              </a>
+            </li>
+
+            <li class="footer__left__socialMedia__list__item">
+              <a class="footer__left__socialMedia__list__item__link" href="#">
+                <img class="footer__left__socialMedia__list__item__link__icon" src="/img/socialMedia/facebook.png" alt="facebook" />
+              </a>
+            </li>
+
+            <li class="footer__left__socialMedia__list__item">
+              <a class="footer__left__socialMedia__list__item__link" href="#">
+                <img class="footer__left__socialMedia__list__item__link__icon" src="/img/socialMedia/Vector (3).png" alt="" />
+              </a>
+            </li>
+
+            <li class="footer__left__socialMedia__list__item">
+              <a class="footer__left__socialMedia__list__item__link" href="#">
+                <img class="footer__left__socialMedia__list__item__link__icon" src="/img/socialMedia/youtub.png" alt="youtub." />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__right">
+
+        <!-- Navigation Footer -->
+        <div class="footer__right__disclaimer">
+          <p class="footer__right__disclaimer__text">Somos a Núclea Associação, a organização de impacto sem fins lucrativos que promove iniciativas educacionais profissionalizantes acessíveis nos campos de inovação e tecnologia.</p>
+        </div>
+
+        <div class="footer__right__copy">
+          <p class="footer__right__copy__text">© 2024 Núclea Associação. Todos os direitos reservados</p>
+        </div>
+      </div>
+    </div>
   </footer>
 
-
+  <script src="/js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 </body>
 </html>

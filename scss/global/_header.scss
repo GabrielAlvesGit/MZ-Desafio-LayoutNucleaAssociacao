@@ -22,6 +22,17 @@
   &__nav{
     display: flex;
     align-items: center;
+
+    &__menu{
+
+      &__menu{
+        
+      }
+
+      &__close{
+        display: none;
+      }
+    }
     
     &__list{
       display: flex;
