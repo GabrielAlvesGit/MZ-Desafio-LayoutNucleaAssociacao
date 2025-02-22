@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="/img/logos/favicon.png" type="image/x-icon" />
   <link rel="stylesheet" href="./style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
   <title>Núclea Associação</title>
 </head>
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <div class="container">
       <!-- Logo -->
       <div class="header__logo">
@@ -72,7 +72,7 @@
   </header>
 
   <!-- Main -->
-  <main class="main">
+  <main class="main" id="teste">
 
     <!-- Connections -->
     <section class="pgHome__connections">
@@ -278,14 +278,16 @@
                 <div class="pgHome__news__top__contents__content">
                   <p class="pgHome__news__top__contents__content__text">Atualizações, conteúdos e novidades para você saber mais sobre nosso impacto.</p>
     
-                  <a class="pgHome__news__top__contents__content__link" href="#">conheça nosso blog</a>
+                  <a class="pgHome__news__top__contents__content__link" href="#">conheça nosso blog
+                    <img class="pgHome__news__top__contents__content__link__img" src="/img/icons/arrowLeft.png" alt="" />
+                  </a>
                 </div>
               </div>
           </article>
 
           <article class="pgHome__news__bottom">
               <div class="pgHome__news__bottom__boxs">
-                <div class="pgHome__news__bottom__boxs__box js-new">
+                <div class="pgHome__news__bottom__boxs__box js-box">
                   <div class="pgHome__news__bottom__boxs__box__imgs">
                     <img class="pgHome__news__bottom__boxs__box__imgs__img" src="/img/news/img_1.png" alt="" />
                   </div>
@@ -299,7 +301,7 @@
                   </div>
                 </div>
 
-                <div class="pgHome__news__bottom__boxs__box js-new">
+                <div class="pgHome__news__bottom__boxs__box js-box">
                   <div class="pgHome__news__bottom__boxs__box__imgs">
                     <img class="pgHome__news__bottom__boxs__box__imgs__img" src="/img/news/img_2.png" alt="" />
                   </div>
@@ -313,7 +315,7 @@
                   </div>
                 </div>
 
-                <div class="pgHome__news__bottom__boxs__box js-new">
+                <div class="pgHome__news__bottom__boxs__box js-box">
                   <div class="pgHome__news__bottom__boxs__box__imgs">
                     <img class="pgHome__news__bottom__boxs__box__imgs__img" src="/img/news/img_3.png" alt="" />
                   </div>
@@ -327,7 +329,7 @@
                   </div>
                 </div>
 
-                <div class="pgHome__news__bottom__boxs__box js-new">
+                <div class="pgHome__news__bottom__boxs__box js-box">
                   <div class="pgHome__news__bottom__boxs__box__imgs">
                     <img class="pgHome__news__bottom__boxs__box__imgs__img" src="/img/news/img_1.png" alt="" />
                   </div>
@@ -343,9 +345,9 @@
               </div>
 
               <div class="pgHome__news__bottom__dots">
-                <span class="pgHome__news__bottom__dots__dot js-next-slick"></span>
-                <span class="pgHome__news__bottom__dots__dot js-next-slick"></span>
-                <span class="pgHome__news__bottom__dots__dot js-next-slick"></span>
+                <span class="pgHome__news__bottom__dots__dot js-dot"></span>
+                <span class="pgHome__news__bottom__dots__dot js-dot"></span>
+                <span class="pgHome__news__bottom__dots__dot js-dot"></span>
               </div>
           </article>
         </div>
@@ -450,6 +452,39 @@
     </div>
   </footer>
 
-  <script src="/js/script.js"></script>
+  <a class="scrollup js-scroll" href="#header">
+    <svg class="uil uil-arrow-up scrollup__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);">
+      <path d="M13 18v-6h5l-6-7-6 7h5v6z"></path>
+    </svg>
+  </a>
+
+  <!-- Verificar depois -->
+  <!-- <script src="">  
+      function slickNew() {
+    const $newsItems = $(".js-new");
+    const $dots = $(".js-next-slick");
+  
+    // Garante que o primeiro item já inicie ativo
+    $dots.first().addClass("active");
+    $newsItems.first().addClass("active");
+  
+    $dots.on("click", function () {
+      const index = $(this).index(); // Obtém o índice do dot clicado
+  
+      $dots.removeClass("active");
+      $(this).addClass("active");
+  
+      $newsItems.removeClass("active");
+      $newsItems.eq(index).addClass("active");
+    });
+  }
+  
+  slickNew();
+  
+  </script> -->
+
+  <script src="/js/header.js"></script>
+  <script src="/js/news.js"></script>
+  <script src="/js/scrollup.js"></script>
 </body>
 </html>

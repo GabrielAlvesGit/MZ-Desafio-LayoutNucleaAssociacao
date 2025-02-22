@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-
+  
   /* ======== Menu Header ========*/
   function menu () {
     var menuOpen = document.querySelector(".js-menu-open");
@@ -18,5 +18,5 @@ document.addEventListener('DOMContentLoaded', () => {
       menuClose.classList.toggle("active");
     });
   }
-  return menu();
+  menu();
 });

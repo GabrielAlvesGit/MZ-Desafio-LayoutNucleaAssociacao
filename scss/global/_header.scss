@@ -259,8 +259,12 @@
               transition: 1.3s;
 
               &__item{
-                padding: 19px 0px 16px 44px ;
-                border-top: 1px solid $secondary--color--gray;
+      
+                &__link{
+                  display: flex;
+                  padding: 19px 0px 16px 44px ;
+                  border-top: 1px solid $secondary--color--gray;
+                }
               }
             }
           }

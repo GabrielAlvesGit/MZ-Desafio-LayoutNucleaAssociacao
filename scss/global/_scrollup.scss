@@ -1,0 +1,13 @@
+.scrollup{
+  position: fixed;
+  right: 20px;
+  bottom: -100px;
+  background-color: #DBED1F;
+  padding: 15px 17px;
+  border-radius: 61%;
+  transition: 0.35s all;
+  
+  &.active{
+    bottom: 20px;
+  }
+}

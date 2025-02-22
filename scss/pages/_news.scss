@@ -9,7 +9,6 @@
     gap: 36px;
   }
 
-
   &__top{
     width: 100%;
 
@@ -55,6 +54,14 @@
           line-height: 100%;
           letter-spacing: 0.7px;
           text-transform: uppercase;
+          gap: 10px;
+
+          &__img{
+            display: inline;
+            width: 13px;
+            max-width: 100%;
+            object-fit: cover;
+          }
         }
       }
     }
@@ -74,7 +81,7 @@
 
       &__box{
         flex: 0 0 32.1%;
-
+    
         &__imgs{
           //width: 402px;
           height: 294px;
@@ -150,9 +157,13 @@
         width: 12px;
         height: 12px;
         margin: 5px;
-        background: #ccc;
+        background: $secondary--color--gray--nimbus;
         border-radius: 50%;
         cursor: pointer;
+
+        &.active{
+          background: $primary--color--dark;
+        }
       }
     }
   }
@@ -160,6 +171,60 @@
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices - 1200px */
-@media screen and (max-width: 12500px) {
-  
+@media screen and (max-width: 1200px) {
+  .pgHome__news{
+    padding: 33px 0 63px;
+
+    >.container{
+      gap: 47px;
+    }
+
+    &__top{
+
+      &__contents{
+     
+        &__title{
+          font-size: 28px;
+          letter-spacing: -0.84px;
+        }
+
+        &__content{
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 32px;
+
+          &__text{
+            font-size: 16px;
+            letter-spacing: -0.16px;
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    &__bottom{
+
+      &__boxs{
+        
+        &__box{
+          flex: 0 0 60%;
+        }
+      }
+    }
+  }
+}
+
+/* For large devices - 1200px */
+@media screen and (max-width: $screen-sm) {
+  .pgHome__news{
+    &__bottom{
+
+      &__boxs{
+        
+        &__box{
+          flex: 0 0 90%;
+        }
+      }
+    }
+  }
 }
