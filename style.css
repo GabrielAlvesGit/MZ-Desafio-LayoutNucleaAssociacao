@@ -611,8 +611,8 @@ li {
   .pgHome__connections__right {
     width: 100%;
   }
-  .pgHome__connections__right__imgs__img {
-    height: 796.44px;
+  .pgHome__connections__right__imgs {
+    height: 400.3px;
   }
 }
 .pgHome__hereYouFind {
@@ -746,6 +746,9 @@ li {
     font-size: 32px;
     padding-left: 0;
     left: 8%;
+  }
+  .pgHome__hereYouFind__left__imgs {
+    height: 285.1px;
   }
   .pgHome__hereYouFind__right {
     width: 100%;
@@ -961,6 +964,7 @@ li {
   .pg__platform__top__left__contents__link {
     padding: 9.949px 12.437px;
     margin-top: 32px;
+    height: 40px;
   }
   .pg__platform__top__right {
     width: 100%;
@@ -1023,7 +1027,7 @@ li {
 }
 .pgHome__future__left__imgs {
   width: 100%;
-  height: 508px;
+  height: 810px;
 }
 .pgHome__future__left__imgs__img {
   width: 100%;
@@ -1095,6 +1099,9 @@ li {
   .pgHome__future__left {
     width: 100%;
   }
+  .pgHome__future__left__imgs {
+    height: 476px;
+  }
   .pgHome__future__right {
     width: 100%;
   }
@@ -1118,6 +1125,7 @@ li {
   }
   .pgHome__future__right__contents__link {
     padding: 7.98px 9.975px;
+    height: 40px;
   }
 }
 .pgHome__innovation {
@@ -1177,13 +1185,13 @@ li {
 }
 .pgHome__innovation__right__imgs {
   width: 100%;
-  height: 620px;
+  height: 797px;
 }
 .pgHome__innovation__right__imgs__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 70px 53px;
+  object-position: 30px 61px;
 }
 
 /*=============== BREAKPOINTS ===============*/
@@ -1210,7 +1218,9 @@ li {
     font-size: 16px;
   }
   .pgHome__innovation__left__contents__link {
+    display: inline-flex;
     padding: 8.221px 10.277px;
+    height: 40px;
   }
   .pgHome__innovation__right {
     width: 100%;
@@ -1285,6 +1295,9 @@ li {
   object-fit: cover;
 }
 .pgHome__news__bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
   width: 100%;
   overflow: hidden;
 }
@@ -1357,7 +1370,6 @@ li {
 .pgHome__news__bottom__dots {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
 }
 .pgHome__news__bottom__dots__dot {
   width: 12px;
@@ -1396,6 +1408,12 @@ li {
   }
   .pgHome__news__bottom__boxs__box {
     flex: 0 0 60%;
+  }
+  .pgHome__news__bottom__boxs__box__contents__title {
+    font-size: 24px;
+  }
+  .pgHome__news__bottom__boxs__box__contents__link {
+    padding: 13.006px 16.258px;
   }
 }
 /* For large devices - 1200px */

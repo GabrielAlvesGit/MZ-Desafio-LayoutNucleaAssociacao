@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   /* ======== Slick News ========*/
   function slickNew() {
+    const container = document.querySelector(".js-box-container");
     const box = document.querySelectorAll(".js-box");
     const dots = document.querySelectorAll(".js-dot");
     dots[0].classList.add("active");

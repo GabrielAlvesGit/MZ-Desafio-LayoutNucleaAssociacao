@@ -68,6 +68,9 @@
   }
 
   &__bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
     width: 100%;
     overflow: hidden;
 
@@ -151,7 +154,6 @@
     &__dots {
       display: flex;
       justify-content: center;
-      margin-top: 10px;
 
       &__dot {
         width: 12px;
@@ -208,6 +210,17 @@
         
         &__box{
           flex: 0 0 60%;
+
+          &__contents{
+
+            &__title{
+              font-size: 24px;
+            }
+
+            &__link{
+              padding: 13.006px 16.258px;
+            }
+          }
         }
       }
     }

@@ -133,7 +133,6 @@
   }
 }
 
-
 /*=============== BREAKPOINTS ===============*/
 /* For large devices - 1200px */
 @media screen and (max-width: 1200px){
@@ -150,6 +149,10 @@
           padding-left: 0;
           left: 8%;
         }
+      }
+
+      &__imgs{
+        height: 285.1px;
       }
     }
 
