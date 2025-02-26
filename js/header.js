@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-  
   /* ======== Menu Header ========*/
   function menu () {
     var menuOpen = document.querySelector(".js-menu-open");

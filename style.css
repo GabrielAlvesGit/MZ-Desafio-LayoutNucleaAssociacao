@@ -165,18 +165,19 @@ li {
   min-width: 100%;
   background-color: #F5F5F5;
   transform: translate(-50%, 50%);
-  top: 18px;
+  top: -17px;
   left: 47%;
-  padding: 10px;
   transition: 0.45s all;
   opacity: 0;
 }
 .header__navigation__nav__list__item__sublist__item__link {
+  display: flex;
   color: #696969;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  padding: 22px 36px;
   text-transform: uppercase;
 }
 .header__navigation__menu {
@@ -745,7 +746,8 @@ li {
   .pgHome__hereYouFind__left__contents__title {
     font-size: 32px;
     padding-left: 0;
-    left: 8%;
+    left: 7%;
+    height: 100dvh;
   }
   .pgHome__hereYouFind__left__imgs {
     height: 285.1px;
@@ -1416,7 +1418,7 @@ li {
     padding: 13.006px 16.258px;
   }
 }
-/* For large devices - 1200px */
+/* For large devices - 992px */
 @media screen and (max-width: 576px) {
   .pgHome__news__bottom__boxs__box {
     flex: 0 0 90%;

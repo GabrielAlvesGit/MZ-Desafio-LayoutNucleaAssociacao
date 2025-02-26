@@ -94,19 +94,20 @@
             min-width: 100%;
             background-color: #F5F5F5;
             transform: translate(-50%, 50%);
-            top: 18px;
+            top: -17px;
             left: 47%;
-            padding: 10px;
             transition: 0.45s all;
             opacity: 0;
             
             &__item{
               &__link{
+                display: flex;
                 color: $primary--color--darkGray;
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
+                padding: 22px 36px;
                 text-transform: uppercase;
               }
             }
